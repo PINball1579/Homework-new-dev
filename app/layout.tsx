@@ -20,7 +20,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={dbHelvetica.variable}>
+    <html lang="th" className={dbHelvetica.variable}>
       <body className={dbHelvetica.className}>
         <Headers />
         <div className="relative w-full h-auto pt-20 bg-background-white">

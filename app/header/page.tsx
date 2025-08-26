@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import HomeIcon from '@/public/icons/HomeIcon.svg'  
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -14,15 +15,15 @@ const Header = () => {
   const menuItems = [
     { href: "", text: "โรคงูสวัดคืออะไร" },
     { href: "", text: "อาการ" },
-    { href: "", text: "โรคป้องกันด้วยวัคซีน" },
-    { href: "", text: "ความเสี่ยงคืออะไร" },
-    { href: "", text: "โรคร้ายแลาความเสื่อนของการทำหน้าเป็นมะเร็ง" }
+    { href: "", text: "ใครบ้างที่มีความเสี่ยง" },
+    { href: "", text: "ภาวะแทรกซ้อน" },
+    { href: "", text: "โรคร่วมและความเสี่ยงต่อการเป็นงูสวัด" }
   ]
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm h-20">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm h-20 font-db-helvethaica">
       <div className="w-full h-full">
-        <div className="flex flex-row items-center justify-between mx-auto w-full h-full p-4 mobile-lg:px-8 md:px-16 lg:px-[160px] laptop:px-[200px] lg:min-w-[1112px]">
+        <div className="flex flex-row items-center justify-between mx-auto w-full h-full p-4 mobile-lg:px-8 md:px-16 lg:px-12 laptop:px-[200px] lg:min-w-[1112px]">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Image
@@ -35,15 +36,20 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8 items-center">
-            <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center">
-              <span className="text-white text-xs">🏠</span>
-            </div>
+            <button className="px-3 py-2 bg-[#DF3E01] rounded-3xl flex items-center justify-center cursor-pointer" style={{ boxShadow: '0 4px 8px rgba(223, 62, 1, 0.3)' }}>
+              <Image
+              src="/icons/HomeIcon.svg"
+              alt="Home Icon"
+              width={18}
+              height={18}
+            />
+            </button>
 
             {menuItems.map((item, index) => (
               <Link 
                 key={index}
                 href={item.href} 
-                className="text-black hover:text-orange-500 text-xl font-medium transition-colors duration-200"
+                className="text-black hover:text-[#DF3E01] text-xl font-medium"
               >
                 {item.text}
               </Link>

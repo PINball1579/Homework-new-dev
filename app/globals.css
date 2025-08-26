@@ -22,10 +22,9 @@ body {
   color: var(--foreground);
 }
 
-
-
+/* Fixed font-face declarations with consistent naming */
 @font-face {
-  font-family: 'DB Helvethaica X';
+  font-family: 'DB HelvethaicaX';
   src: url('/fonts/db-helvethaica-x.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
@@ -33,8 +32,33 @@ body {
 }
 
 @font-face {
+  font-family: 'DB HelvethaicaX Extended';
+  src: url('/fonts/db-helvethaica-x-ext.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  
+}
+
+@font-face {
+  font-family: 'DB HelvethaicaX Extended';
+  src: url('/fonts/db-helvethaica-x-md-ext.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DB HelvethaicaX Extended';
+  src: url('/fonts/db-helvethaica-x-bd-ext.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'DB HelvethaicaX';
-  src: url('/fonts/db-helvethaica-x.ttf') format('truetype');
+  src: url('/fonts/db-helvethaica-x-medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -42,7 +66,7 @@ body {
 
 @font-face {
   font-family: 'DB HelvethaicaX';
-  src: url('/fonts/db-helvethaica-x.ttf') format('truetype');
+  src: url('/fonts/db-helvethaica-x-semibold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -50,9 +74,57 @@ body {
 
 @font-face {
   font-family: 'DB HelvethaicaX';
-  src: url('/fonts/db-helvethaica-x.ttf') format('truetype');
+  src: url('/fonts/db-helvethaica-x-bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
+/* Additional CSS to ensure font weights work */
+* {
+  font-feature-settings: normal;
+}
+
+.font-db-helvethaica {
+  font-family: 'DB HelvethaicaX', sans-serif;
+}
+
+.font-db-helvethaica-extended {
+  font-family: 'DB HelvethaicaX Extended', sans-serif;
+}
+
+/* Explicit font weight classes if needed */
+.font-normal-custom {
+  font-family: 'DB HelvethaicaX', sans-serif;
+  font-weight: 400;
+}
+
+.font-normal-extended {
+  font-family: 'DB HelvethaicaX Extended', sans-serif;
+  font-weight: 400;
+}
+
+.font-medium-extended {
+  font-family: 'DB HelvethaicaX Extended', sans-serif;
+  font-weight: 500;
+}
+
+.font-bold-extended {
+  font-family: 'DB HelvethaicaX Extended', sans-serif;
+  font-weight: 700;
+}
+
+.font-medium-custom {
+  font-family: 'DB HelvethaicaX', sans-serif;
+  font-weight: 500;
+}
+
+.font-semibold-custom {
+  font-family: 'DB HelvethaicaX', sans-serif;
+  font-weight: 600;
+}
+
+.font-bold-custom {
+  font-family: 'DB HelvethaicaX', sans-serif;
+  font-weight: 700;
+}

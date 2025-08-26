@@ -1,9 +1,7 @@
 import type { Config } from 'tailwindcss';
 
 export default {
-  content: [
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       height: {
@@ -21,6 +19,14 @@ export default {
       },
       fontFamily: {
         'db-helvethaica': ['DB HelvethaicaX', 'sans-serif'],
+        'db-helvethaica-extended': ['DB HelvethaicaX Extended', 'sans-serif'],
+        sans: ['DB HelvethaicaX', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      fontWeight: {
+        normal: '400',
+        medium: '500',
+        semibold: '600',
+        bold: '700',
       },
       colors: {
         text: {
@@ -31,138 +37,6 @@ export default {
         button: {
           default: '#DF3E01',
         },
-      },
-      fontSize: {
-        'desktop-h1-hero-topic': [
-          '3.5rem', {
-            fontWeight: 600,
-          },
-        ],
-        'desktop-h2-topic': [
-          '1.75rem', {
-            fontWeight: 600,
-          },
-        ],
-        'desktop-h3-topic': [
-          '1.5rem', {
-            fontWeight: 600,
-          },
-        ],
-        'desktop-h1': [
-          '2rem', {
-            fontWeight: 600,
-          },
-        ],
-        'desktop-h2': [
-          '1.75rem', {
-            fontWeight: 600,
-          },
-        ],
-        'desktop-h3': [
-          '1.25rem', {
-            fontWeight: 600,
-          },
-        ],
-        'desktop-h4': [
-          '1rem', {
-            fontWeight: 600,
-          },
-        ],
-        'desktop-button-big': [
-          '1.25rem', {
-            fontWeight: 700,
-          },
-        ],
-        'desktop-button-base': [
-          '1rem', {
-            fontWeight: 700,
-          },
-        ],
-        'desktop-body': [
-          '1rem', {
-            fontWeight: 500,
-          },
-        ],
-        'desktop-label-bold': [
-          '0.875rem', {
-            fontWeight: 700,
-          },
-        ],
-        'desktop-label': [
-          '0.875rem', {
-            fontWeight: 500,
-          },
-        ],
-        'desktop-caption': [
-          '0.75rem', {
-            fontWeight: 500,
-          },
-        ],
-        'mobile-h1-hero-topic': [
-          '2rem', {
-            fontWeight: 600,
-          },
-        ],
-        'mobile-h2-topic': [
-          '1.5rem', {
-            fontWeight: 600,
-          },
-        ],
-        'mobile-h3-topic': [
-          '1.25rem', {
-            fontWeight: 600,
-          },
-        ],
-        'mobile-h1': [
-          '1.75rem', {
-            fontWeight: 600,
-          },
-        ],
-        'mobile-h2': [
-          '1.5rem', {
-            fontWeight: 600,
-          },
-        ],
-        'mobile-h3': [
-          '1.125rem', {
-            fontWeight: 600,
-          },
-        ],
-        'mobile-h4': [
-          '1rem', {
-            fontWeight: 600,
-          },
-        ],
-        'mobile-button-big': [
-          '1.25rem', {
-            fontWeight: 700,
-          },
-        ],
-        'mobile-button-base': [
-          '1rem', {
-            fontWeight: 700,
-          },
-        ],
-        'mobile-body': [
-          '1rem', {
-            fontWeight: 500,
-          },
-        ],
-        'mobile-label-bold': [
-          '0.875rem', {
-            fontWeight: 700,
-          },
-        ],
-        'mobile-label': [
-          '0.875rem', {
-            fontWeight: 500,
-          },
-        ],
-        'mobile-caption': [
-          '0.75rem', {
-            fontWeight: 500,
-          },
-        ],
       },
       screens: {
         'mobile-md': '375px',
