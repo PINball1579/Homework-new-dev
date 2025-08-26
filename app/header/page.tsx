@@ -3,7 +3,6 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import HomeIcon from '@/public/icons/HomeIcon.svg'  
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -49,7 +48,7 @@ const Header = () => {
               <Link 
                 key={index}
                 href={item.href} 
-                className="text-black hover:text-[#DF3E01] text-xl font-medium"
+                className="text-black text-[26px] font-medium-extended hover:text-[#DF3E01]"
               >
                 {item.text}
               </Link>
