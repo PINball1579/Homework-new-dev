@@ -1,7 +1,7 @@
 import React from 'react'
-import Image from 'next/image'
 import Banner from './banner/page'
 import About from './about/page'
+import RiskSection from './riskSection/page'
 
 const HomePage: React.FC = () => {
   return (
@@ -12,6 +12,9 @@ const HomePage: React.FC = () => {
 
       {/* Main Content */}
       <About />
+
+      <RiskSection />
+      
     </div>
   )
 }
