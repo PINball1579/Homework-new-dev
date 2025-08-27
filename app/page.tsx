@@ -3,6 +3,7 @@ import Banner from './banner/page'
 import About from './about/page'
 import RiskSection from './riskSection/page'
 import VaccineSection from './vaccineSection/page'
+import Footer from './footer/page'
 
 const HomePage: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage: React.FC = () => {
       <About />
       <RiskSection />
       <VaccineSection />
+      <Footer />
       
     </div>
   )

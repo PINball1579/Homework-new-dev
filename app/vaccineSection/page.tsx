@@ -80,7 +80,7 @@ const VaccinePage = () => {
    </section>
 
    {/* Middle Section - Doctor Banner */}
-   <section className="py-12">
+   <section className="pt-12 pb-30">
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     {/* Wrapper keeps the doctor free to overflow above the banner */}
     <div className="relative">
