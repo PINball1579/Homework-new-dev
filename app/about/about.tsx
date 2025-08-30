@@ -4,27 +4,27 @@ import Image from 'next/image'
 const About = () => {
 
  return (
-  <section className="py-16 bg-gray-50">
-   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section className="py-16 mx-2 sm:mx-20">
+   <div className="px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
      {/* Left Content */}
 
      <div className="leading-none">
-      <p className="w-fit h-fit text-[140px] font-bold-extended text-[#DF3E01] leading-none mb-0">
+      <p className="w-fit h-fit text-[110px] md:text-[140px] font-bold-extended text-[#DF3E01] leading-none mb-0">
        โรคงูสวัด
       </p>
       <div className="leading-none mt-2">
        <span className="text-[40px] font-medium-extended text-gray-800 mr-2">
         หรืออีกชื่อ คือ
        </span>
-       <span className="text-[40px] font-bold-extended text-black">HERPES ZOSTER</span>
-      </div>
-      <div className="leading-none mt-1">
+       <span className="text-[40px] font-bold-extended text-black mr-4">HERPES ZOSTER</span>
        <span className="text-[40px] font-medium-extended text-black mr-2">
-        มีสาเหตุมาจาก
+        <span className="hidden md:inline"><br /></span>มีสาเหตุมาจาก
        </span>
+
        <span className="text-[40px] font-bold-extended text-black">เชื้อไวรัส</span>
       </div>
+
 
       <div className="mt-6">
        <p className="text-[26px] font-bold-extended text-black">
@@ -49,6 +49,7 @@ const About = () => {
       alt="GSK"
       width={562}
       height={566}
+      className='hidden md:inline'
      />
     </div>
    </div>

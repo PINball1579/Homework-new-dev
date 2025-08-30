@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import localFont from 'next/font/local'
-import Headers from './header/page'
+import Headers from './header/header'
 
 const dbHelvetica = localFont({
   src: '../public/fonts/db-helvethaica-x.ttf',
@@ -22,9 +22,13 @@ export default function RootLayout({
   return (
     <html lang="th" className={dbHelvetica.variable}>
       <body className={dbHelvetica.className}>
-        <Headers />
-        <div className="relative w-full h-auto pt-20 bg-background-white">
-          {children}
+        <div className="flex flex-col">
+          <Headers />
+          <div className="h-20" />
+          <div className="relative w-full bg-background-white overflow-x-hidden">
+            {children}
+          </div>
+
         </div>
       </body>
     </html>

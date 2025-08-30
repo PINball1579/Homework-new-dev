@@ -20,9 +20,9 @@ const Header = () => {
   ]
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm h-20 font-db-helvethaica">
+    <header className="fixed top-0 w-full mx-auto h-mobileTopBarHeight lg:h-topBarHeight z-50 items-center bg-white shadow-sm h-20 font-db-helvethaica">
       <div className="w-full h-full">
-        <div className="flex flex-row items-center justify-between mx-auto w-full h-full p-4 mobile-lg:px-8 md:px-16 lg:px-12 laptop:px-[200px] lg:min-w-[1112px]">
+        <div className="flex flex-row items-center justify-between mx-auto w-full h-full px-4 md:px-2 lg:px-2 xl:px-6">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Image
@@ -57,7 +57,7 @@ const Header = () => {
 
           {/* Mobile Burger Menu Button */}
           <button
-            className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1 focus:outline-none"
+            className="md:hidden flex flex-col justify-center items-center h-8 space-y-1 focus:outline-none"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -70,17 +70,12 @@ const Header = () => {
         {/* Mobile Menu */}
         <div className={`md:hidden bg-white border-t border-gray-200 transition-all duration-300 ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
           <nav className="px-4 py-4 space-y-4">
-            <div className="flex items-center justify-center mb-4">
-              <div className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center">
-                <span className="text-white text-xs">🏠</span>
-              </div>
-            </div>
             
             {menuItems.map((item, index) => (
               <Link
                 key={index}
                 href={item.href}
-                className="block text-black hover:text-orange-500 text-lg font-medium py-2 text-center border-b border-gray-100 last:border-b-0 transition-colors duration-200"
+                className="block text-black hover:text-orange-500 text-2xl font-medium py-2 text-center border-b border-gray-100 last:border-b-0 transition-colors duration-200"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.text}

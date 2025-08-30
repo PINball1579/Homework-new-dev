@@ -17,6 +17,13 @@
   }
 }
 
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* ป้องกัน scroll ด้านข้างและช่องดำ */
+}
+
+
 body {
   background: var(--background);
   color: var(--foreground);
